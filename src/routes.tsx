@@ -4,28 +4,13 @@ import SignIn from "./pages/SignIn/SignIn";
 import CreateProfile from "./pages/CreateProfile/CreateProfile";
 
 export default function RoutesComponent() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route
-                    index
-                    element={
-                        <Welcome/>
-                    }
-                />
-                <Route
-                    path="/signIn"
-                    element={
-                        <SignIn/>
-                    }
-                />
-                <Route
-                    path="/createProfile"
-                    element={
-                        <CreateProfile/>
-                    }
-                />
-            </Routes>
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Welcome />} />
+        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/createProfile" element={<CreateProfile />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
